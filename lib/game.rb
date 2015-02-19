@@ -57,4 +57,5 @@ private
 	def has_two_players?
 		!player2.nil?
 	end
+
 end
