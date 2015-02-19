@@ -59,9 +59,12 @@ td{
   text-align: center;
 }
 
-a 
+a
 {
   color: white;
   text-decoration: none;
 }
 
+audio{
+  display: none;
+}
