@@ -1,4 +1,5 @@
-body{
+body
+{
   background-color: black;
   text-align: center;
 }
@@ -40,12 +41,11 @@ form
   text-align: center;
 }
 
-
 table.center {
   margin-left:auto;
   margin-right:auto;
   height: 90%;
-  width: 80%;
+  width: 60%;
 }
 
 th{
@@ -53,18 +53,44 @@ th{
   font-family: courier;
 }
 
-td{
+td
+{
   border: 2px solid white;
   color: white;
   text-align: center;
 }
 
+<<<<<<< HEAD
 a
+=======
+#button_red
+>>>>>>> 83c81f4efe0e0368750391f2631fb8266c074f86
+{
+  border-radius: 100px;
+  font-family: courier;
+  color: white;
+  background-color: red;
+  font-size:20px;
+}
+
+<<<<<<< HEAD
+audio{
+  display: none;
+=======
+#button_blue
+{
+  border-radius: 100px;
+  font-family: courier;
+  color: white;
+  background-color: blue;
+  font-size:20px;
+}
+
+a 
 {
   color: white;
   text-decoration: none;
-}
-
-audio{
-  display: none;
+  padding-left: 30px;
+  padding-right: 30px;
+>>>>>>> 83c81f4efe0e0368750391f2631fb8266c074f86
 }
