@@ -26,19 +26,20 @@ class BattleShipsWeb < Sinatra::Base
   player1 = Player.new()
   player1.board = Board.new(Cell)
   player1.board.place(ship, :A2)
-  player1.board.place(ship2, :B7)
+  player1.board.place(ship2, :B3)
   player1.board.place(ship3, :E6)
   player1.board.place(ship4, :F2)
-  player1.board.place(ship5, :C4)
+  player1.board.place(ship5, :C2)
   game.add_player(player1)
   player2 = Player.new()
   player2.board = Board.new(Cell)
   game.add_player(player2)
   player2.board.place(ship6, :A1)
-  player2.board.place(ship7, :D4)
+  player2.board.place(ship7, :C2)
   player2.board.place(ship8, :F2)
-  player2.board.place(ship9, :G4)
+  player2.board.place(ship9, :B2)
   player2.board.place(ship10, :I4)
+
   get('/') do
     erb :index
   end
@@ -53,25 +54,9 @@ class BattleShipsWeb < Sinatra::Base
   end
 
   post('/new_game') do
-<<<<<<< HEAD
-    ship = Ship.new(1)
-    ship3 = Ship.new(1)
-    player = Player.new()
-    player.name = params[:user_name]
-    player.board = Board.new(Cell)
-    player.board.place(ship, :A7)
-    game.add_player(player)
-    computer = Player.new()
-    computer.name = "computer"
-    computer.board = Board.new(Cell)
-    game.add_player(computer)
-    computer.board.place(ship3, :A1)
-    @player = game.current_player
-=======
     player2.name = params[:player2_name]
     @current_player = game.current_player
     game.current_player == player1 ? @opponent = game.player2 : @opponent = game.player1
->>>>>>> 83c81f4efe0e0368750391f2631fb8266c074f86
     erb :new_game
   end
 
@@ -83,7 +68,6 @@ class BattleShipsWeb < Sinatra::Base
     rescue DoubleHitError => e
       @message = e.message
     end
-
     @current_player = game.current_player
     game.current_player == player1 ? @opponent = game.player2 : @opponent = game.player1
     erb :new_game

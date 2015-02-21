@@ -1,3 +1,9 @@
+audio
+{
+  display: none;
+/*>>>>>>> 517836302e600f36926ea71d1f3844deddd58dd6*/
+}
+
 body
 {
   background-color: black;
@@ -45,7 +51,7 @@ form
   text-align: center;
 }
 
-table.center 
+table.center
 {
   margin-left:auto;
   margin-right:auto;
@@ -66,11 +72,11 @@ td
   text-align: center;
 }
 
-<<<<<<< HEAD
-a
-=======
+/*<<<<<<< HEAD*/
+/*a
+=======*/
 #button_red
->>>>>>> 83c81f4efe0e0368750391f2631fb8266c074f86
+/*>>>>>>> 83c81f4efe0e0368750391f2631fb8266c074f86*/
 {
   border-radius: 100px;
   font-family: courier;
@@ -79,10 +85,11 @@ a
   font-size:20px;
 }
 
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 audio{
   display: none;
-=======
+}
+/*=======*/
 #button_blue
 {
   border-radius: 100px;
@@ -101,19 +108,14 @@ audio{
   font-size:20px;
 }
 
-a 
+a
 {
   color: white;
   text-decoration: none;
   padding-left: 30px;
   padding-right: 30px;
-<<<<<<< HEAD
->>>>>>> 83c81f4efe0e0368750391f2631fb8266c074f86
-=======
+/*<<<<<<< HEAD*/
+/*>>>>>>> 83c81f4efe0e0368750391f2631fb8266c074f86*/
+/*=======*/
 }
 
-audio
-{
-  display: none;
->>>>>>> 517836302e600f36926ea71d1f3844deddd58dd6
-}
